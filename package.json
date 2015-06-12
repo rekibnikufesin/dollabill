@@ -1,0 +1,29 @@
+{
+  "name": "dollabill",
+  "version": "0.1.0",
+  "description": "Analyze and summarize AWS usage info",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TraxTechnologies/dollabill.git"
+  },
+  "keywords": [
+    "AWS",
+    "EC2"
+  ],
+  "author": "Will Button[will@willbutton.co] (will@willbutton.co)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TraxTechnologies/dollabill/issues"
+  },
+  "homepage": "git@github.com:TraxTechnologies/dollabill.git",
+  "dependencies": {
+    "aws-sdk": "^2.1.33",
+    "cli-table": "^0.3.1",
+    "async": "^1.2.1"
+  },
+  "devDependencies": {}
+}
