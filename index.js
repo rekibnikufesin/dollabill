@@ -35,7 +35,10 @@ async.series([
               volIds.push(b.Ebs.VolumeId);
               bCB();
             });
-            instances.push({name: name, id: i.InstanceId, size: i.InstanceType, vols: volIds});
+            if(i.State.Name === 'running'){
+              instances.push({name: name, id: i.InstanceId, size: i.InstanceType, vols: volIds});
+            }
+
             instCB();
           }, function(){
             resCB();
@@ -90,7 +93,7 @@ async.series([
         MetricName: 'CPUUtilization', /* required */
         Namespace: 'AWS/EC2', /* required */
         Period: 900, /* required (15 minute block) */
-        StartTime: new Date('June 01, 2015 00:00:00'), /* required */
+        StartTime: new Date('June 17, 2015 00:00:00'), /* required */
         Statistics: [ /* required */
           'Average'
         ],
