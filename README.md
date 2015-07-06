@@ -39,7 +39,7 @@ It's easy to let expenses get out of control in AWS, and difficult to see where 
 
 ## Installation
 
-npm install -g https://github.com/TraxTechnologies/dollabill
+npm install -g https://github.com/rekibnikufesin/dollabill
 
 ## ToDo
 
